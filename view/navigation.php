@@ -1,5 +1,6 @@
 <?php
     require_once(__DIR__ . "/../model/config.php"); //connects to proper file to display as post.php
+    
 ?>
 <nav>
     <ul>
