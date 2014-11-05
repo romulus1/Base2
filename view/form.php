@@ -1,4 +1,4 @@
-<hi>Create Blog Post</hi>
+<hi>Create Blog Post</hi> <!-- displays text-->
 
 <form> <!-- creates a form code to put in the text as a form-->
     <div>
@@ -9,5 +9,5 @@
     <div>
         <label for="post">Post: </label> <!--Puts post on screen-->
         <textarea name="post"></textarea> <!--displays post-->
-    </div>
+    </div>          
 </form>
