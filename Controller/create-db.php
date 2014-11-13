@@ -1,7 +1,7 @@
 <?php
 require_once(__DIR__ . "/../model/database.php"); //opens database code in mdoel folder
 
-$connection = new mysqli($host, $username, $password); //uses mysqli to create the connection
+$connection = new mysqli($host, $username, $password); //uses mysqli to create the connection, always going to be needed
 
 if($connection->connect_error) { //creates an if statement and runs the code if the connection is not avialable
     die("<p>Error: " . $connection->connect_error . "</p>"); //kills code so nothing appears if there's no connection
