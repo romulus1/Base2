@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . "/../model/database.php"); //opens database code in mdoel folder
+require_once(__DIR__ . "/../model/config.php"); //opens database code in mdoel folder
 
 $connection = new mysqli($host, $username, $password); //uses mysqli to create the connection, always going to be needed
 
