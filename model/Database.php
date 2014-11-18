@@ -14,11 +14,17 @@ class Database { //you store information
     }
     
     public function openConnection() { //eliminates repetition
-        
+        $this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
+    
+        if ($this->connection->connect_error) { //creates an if statement and runs the code if the connection is not avialable
+            die("<p>Error: " . $this->connection->connect_error . "</p>"); //kills code so nothing appears if there's no connection
+        }
     }
     
     public function closeConnection() { //eliminates repetition
-        
+        if(isset ($this->connection)) {
+            $this->connection->close();
+        }
     }
     
     public function query($string) { //eliminates repetition
