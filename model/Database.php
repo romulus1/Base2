@@ -22,8 +22,8 @@ class Database { //you store information
     }
     
     public function closeConnection() { //eliminates repetition
-        if(isset ($this->connection)) {
-            $this->connection->close();
+        if(isset ($this->connection)) { //isset determines if a variable is empty(null)
+            $this->connection->close(); 
         }
     }
     
