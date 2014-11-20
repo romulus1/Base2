@@ -15,4 +15,4 @@
         echo "<p>$connection->error</p>"; //checks if there's an error with the post
     }
     
-    $connection->close(); //closes connection to my database,
+    $connection->close(); //closes connection to my database
